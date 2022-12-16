@@ -1,0 +1,15 @@
+
+Exercicio 2
+ Eu tenho 20 células. Em cada célula, tenho 2 botoes. Como posso verificar na TableView qual botao da célula foi clicado? (O uso de Delegate)
+
+ . instancio addTarget no butao, crio uma funcao e coloco um print
+
+
+ Exercicio 3
+  Explique a diferenca entre a UITableViewDataSource e UITableViewDelegate?
+
+  . UITableViewDeegate permite usar métodos que correspondem a uma UITableView em uma VIewController
+    OS Métodos de Layout
+  
+
+  . UItableViewDataSOurce usado para manipular dados e customiza - los
