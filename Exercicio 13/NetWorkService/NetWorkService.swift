@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum  ResultError: Error {
     case badUrl
@@ -14,14 +15,15 @@ enum  ResultError: Error {
 }
 
 class NetWorkManager {
-    static var shared = NetWorkManager()
+    static let shared = NetWorkManager()
     
     struct Constant {
-        static let newAPI = URL(string: "http://127.0.0.1:8080")
-        
+        static let newAPI = URL(
+            string: "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=6321edd4dc824fdaab008fc14a97977c")
+    }
         private init() {  }
         
-        func getNews(completion: @escaping (Result<[Article],ResultError>) -> Void) {
+    func getNews(completion: @escaping (Result<[Article],ResultError>) -> Void) {
             
             // Setup Url
             guard let url = Constant.newAPI else { return completion(.failure(.badUrl)) }
@@ -42,9 +44,9 @@ class NetWorkManager {
                 
              // MARK:
                 do {
-                    let json = JSONDecoder()
-                    let result = try json.decode(ResponseElement.self, from: data)
-                    completion(.success(result.home.articles ?? []))
+                    
+                    let result = try? newJSONDecoder().decode(News.self, from: data)
+                    completion(.success(result?.articles ?? []))
                 } catch {
                     print("Error info: \(error.localizedDescription)")
                     completion(.failure(.noData))
@@ -54,4 +56,4 @@ class NetWorkManager {
             task.resume()
         }
     }
-}
+
