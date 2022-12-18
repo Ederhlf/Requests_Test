@@ -103,54 +103,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5D43F80A-AF97-44C0-A857-F8E09FD008A4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Exercicio 13/VC/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5D43F80A-AF97-44C0-A857-F8E09FD008A4 - 986ad7371906fa29"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Exercicio_13.Article&gt;, Exercicio_13.ResultError&gt;) -&gt; () in Exercicio_13.ViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Exercicio 13"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/franklingaspar/Documents/exercicios%20EBAC/Exercicio%2013/Exercicio%2013/VC/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "277">
-               </Location>
-               <Location
-                  uuid = "5D43F80A-AF97-44C0-A857-F8E09FD008A4 - 986ad7371906fa29"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Exercicio_13.Article&gt;, Exercicio_13.ResultError&gt;) -&gt; () in Exercicio_13.ViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Exercicio 13"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/franklingaspar/Documents/exercicios%20EBAC/Exercicio%2013/Exercicio%2013/VC/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "304">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6304B582-FEE2-4ED4-A7DE-7C067647B190"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -164,7 +116,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "6304B582-FEE2-4ED4-A7DE-7C067647B190 - 4eea112e36395e14"
+                  uuid = "6304B582-FEE2-4ED4-A7DE-7C067647B190 - 4eea112e36395f0d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -174,12 +126,12 @@
                   urlString = "file:///Users/franklingaspar/Documents/exercicios%20EBAC/Exercicio%2013/Exercicio%2013/VC/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
                   offsetFromSymbolStart = "1150">
                </Location>
                <Location
-                  uuid = "6304B582-FEE2-4ED4-A7DE-7C067647B190 - fd6eac75304085d1"
+                  uuid = "6304B582-FEE2-4ED4-A7DE-7C067647B190 - fd6eac75304082ca"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -189,8 +141,8 @@
                   urlString = "file:///Users/franklingaspar/Documents/exercicios%20EBAC/Exercicio%2013/Exercicio%2013/VC/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
                   offsetFromSymbolStart = "122">
                </Location>
             </Locations>

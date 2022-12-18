@@ -55,5 +55,26 @@ class NetWorkManager {
             }
             task.resume()
         }
+    
+//    func postRequest() {
+//        let urlenconded = "user_name=carlos&password=123123"
+//        let url = URL(string: "http://127.0.0.1:8080/login")!
+//        var request = URLRequest(url: url)
+//
+//        request.httpMethod = "Post"
+//        request.httpBody = urlenconded.data(using: .utf8)
+//
+//        let sesssion = URLSession(configuration: .default)
+//
+//        let task = sesssion.dataTask(with: request) {data,response, error in
+//            if let data = data {
+//                if let response = String(data: data, encoding: .utf8) {
+//                    print(response)
+//                }
+//            }
+//        }
+//        task.resume()
+//    }
+//
     }
 

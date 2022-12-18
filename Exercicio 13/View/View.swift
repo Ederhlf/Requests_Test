@@ -13,26 +13,50 @@ protocol ViewDelegate: AnyObject {
 }
  
 class View: UIView {
+    // MARK: Property
+    let cellSpacingHeight: CGFloat = 30
+    var activityView: UIActivityIndicatorView?
+    weak var delegate: ViewDelegate?
     var newsData: [Article] = [] {
         didSet {
           DispatchQueue.main.async {
               self.tableView.reloadData()
+            self.hideActivityIndicator()
             }
         }
     }
     
-    let cellSpacingHeight: CGFloat = 30
-
-    weak var delegate: ViewDelegate?
+    // MARK: Views
     let tableView = UITableView()
-    
+
+    // MARK: Init
     override init(frame: CGRect) {
         super.init(frame: frame)
+        showActivityIndicator()
         layoutBtn()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func showActivityIndicator() {
+        activityView = UIActivityIndicatorView(style: .large)
+        guard let activityView = activityView else { return }
+        tableView.addSubview(activityView)
+        activityView.translatesAutoresizingMaskIntoConstraints = false
+        
+        activityView.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        activityView.centerXAnchor.constraint(equalTo: tableView.centerXAnchor).isActive = true
+        activityView.centerYAnchor.constraint(equalTo: tableView.centerYAnchor).isActive = true
+        activityView.heightAnchor.constraint(equalToConstant: 200) .isActive = true
+        activityView.startAnimating()
+    }
+    
+    func hideActivityIndicator() {
+        guard  let activityView = activityView else { return }
+        
+        activityView.stopAnimating()
     }
     
     func layoutBtn() {
@@ -45,6 +69,7 @@ class View: UIView {
         tableView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         tableView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         tableView.topAnchor.constraint(equalTo: topAnchor) .isActive = true
+        tableView.tableFooterView = .init(frame: .zero)
     }
 }
 

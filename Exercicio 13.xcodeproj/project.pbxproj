@@ -76,6 +76,7 @@
 				9639CC7728E09EF600C800F8 /* SceneDelegate.swift */,
 				96444EE32911A8E600442163 /* Resposta Exercicio 2 e 3 */,
 				96444EDF291176BB00442163 /* VC */,
+				96444EE0291176CC00442163 /* View */,
 				96410E40294BE31300FFCB97 /* ViewModel */,
 				9673E21028FC527200A3AD30 /* Model */,
 				96410E44294BE38D00FFCB97 /* NetWorkService */,
@@ -106,7 +107,6 @@
 		96444EDF291176BB00442163 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				96444EE0291176CC00442163 /* View */,
 				9639CC7928E09EF600C800F8 /* ViewController.swift */,
 			);
 			path = VC;

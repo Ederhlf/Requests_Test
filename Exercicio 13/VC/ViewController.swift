@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.link]
         navigationController?.navigationBar.backgroundColor = .orange
         view.backgroundColor = .link
-        
+
         NetWorkManager.shared.getNews {  result in
             switch result {
             case .success(let response):
