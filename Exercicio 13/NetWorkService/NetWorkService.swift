@@ -56,25 +56,39 @@ class NetWorkManager {
             task.resume()
         }
     
-//    func postRequest() {
-//        let urlenconded = "user_name=carlos&password=123123"
-//        let url = URL(string: "http://127.0.0.1:8080/login")!
-//        var request = URLRequest(url: url)
-//
-//        request.httpMethod = "Post"
-//        request.httpBody = urlenconded.data(using: .utf8)
-//
-//        let sesssion = URLSession(configuration: .default)
-//
-//        let task = sesssion.dataTask(with: request) {data,response, error in
-//            if let data = data {
-//                if let response = String(data: data, encoding: .utf8) {
-//                    print(response)
-//                }
-//            }
-//        }
-//        task.resume()
-//    }
-//
+    // MARK: About Policy Cache
+    func rermoveAllCacheResponse() {
+    URLCache.shared.removeAllCachedResponses()
     }
+    
+    func fetch(title: String, policy: URLRequest.CachePolicy) {
+        var request = URLRequest(url: URL(string: "http://127.0.0.1:8080/cache")!)
+        request.setValue(title, forHTTPHeaderField: "cache-policy")
+        request.cachePolicy = policy
+
+        URLSession.shared.dataTask(with: request) {data, response, error in
+            guard let httpResponse = response as? HTTPURLResponse else { return }
+            let headers = httpResponse.allHeaderFields
+            let etag = headers["Etag"] ?? "-"
+            let cc = headers["Cache-Control"] ?? "-"
+            
+            print("\(title)".prefix(30), String(data: data!, encoding: .utf8)!, "Status Code:", httpResponse.statusCode, "Etag:", etag, "Cache-Control:",cc)
+            
+        }.resume()
+    }
+    
+    func timer(_ timeInterval: Double, _ repeats: Bool) -> Timer {
+        return Timer(timeInterval: timeInterval, repeats: repeats) { _ in
+            self.fetch(title: "useProtocolCachePolicy", policy: .useProtocolCachePolicy)
+        //    fetch(title: "returnCacheDataElseLoad", policy: .returnCacheDataElseLoad)
+        //    fetch(title: "reloadIgnoringLocalCacheData", policy: .reloadIgnoringLocalCacheData)
+        //    fetch(title: "returnCacheDataDontLoad", policy: .returnCacheDataDontLoad)
+        }
+    }
+   
+    func runLoop() {
+      RunLoop.current.add(timer(1, true), forMode: .common)
+      RunLoop.current.run()
+    }
+}
 
