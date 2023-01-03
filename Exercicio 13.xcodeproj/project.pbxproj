@@ -19,7 +19,6 @@
 		96410E50294C141300FFCB97 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96410E4F294C141300FFCB97 /* Article.swift */; };
 		96410E53294C142100FFCB97 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96410E52294C142100FFCB97 /* Source.swift */; };
 		96444EE52911A91300442163 /* RespostaExercicios in Resources */ = {isa = PBXBuildFile; fileRef = 96444EE42911A91300442163 /* RespostaExercicios */; };
-		9672A111295602B600B0D6C4 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9672A110295602B600B0D6C4 /* File.swift */; };
 		9673E21228FC528400A3AD30 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673E21128FC528400A3AD30 /* News.swift */; };
 		9673E21C28FC787B00A3AD30 /* TableViewNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673E21B28FC787B00A3AD30 /* TableViewNewsCell.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +38,6 @@
 		96410E4F294C141300FFCB97 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		96410E52294C142100FFCB97 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		96444EE42911A91300442163 /* RespostaExercicios */ = {isa = PBXFileReference; lastKnownFileType = text; path = RespostaExercicios; sourceTree = "<group>"; };
-		9672A110295602B600B0D6C4 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		9673E21128FC528400A3AD30 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		9673E21B28FC787B00A3AD30 /* TableViewNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewNewsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				96410E45294BE3A600FFCB97 /* NetWorkService.swift */,
-				9672A110295602B600B0D6C4 /* File.swift */,
 			);
 			path = NetWorkService;
 			sourceTree = "<group>";
@@ -213,7 +210,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				96410E46294BE3A600FFCB97 /* NetWorkService.swift in Sources */,
-				9672A111295602B600B0D6C4 /* File.swift in Sources */,
 				9639CC7A28E09EF600C800F8 /* ViewController.swift in Sources */,
 				9639CC7628E09EF600C800F8 /* AppDelegate.swift in Sources */,
 				9673E21228FC528400A3AD30 /* News.swift in Sources */,

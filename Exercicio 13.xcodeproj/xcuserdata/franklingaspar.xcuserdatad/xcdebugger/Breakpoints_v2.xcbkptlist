@@ -110,13 +110,13 @@
             filePath = "Exercicio 13/VC/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "loadNews()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "6304B582-FEE2-4ED4-A7DE-7C067647B190 - 4eea112e36395f0d"
+                  uuid = "6304B582-FEE2-4ED4-A7DE-7C067647B190 - 4eea112e36395eee"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -126,12 +126,12 @@
                   urlString = "file:///Users/franklingaspar/Documents/exercicios%20EBAC/Exercicio%2013/Exercicio%2013/VC/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
                   offsetFromSymbolStart = "1150">
                </Location>
                <Location
-                  uuid = "6304B582-FEE2-4ED4-A7DE-7C067647B190 - fd6eac75304082ca"
+                  uuid = "6304B582-FEE2-4ED4-A7DE-7C067647B190 - fd6eac75304082eb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -141,11 +141,27 @@
                   urlString = "file:///Users/franklingaspar/Documents/exercicios%20EBAC/Exercicio%2013/Exercicio%2013/VC/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
                   offsetFromSymbolStart = "122">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F56A24DF-8D69-414E-B168-08D1D16F173D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercicio 13/NetWorkService/NetWorkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "upLoadTest()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
