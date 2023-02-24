@@ -132,7 +132,21 @@ class NetWorkManager {
         task.resume()
 
     }
-}
+    
+    func downloadAPI() {
+          let downloadSession = URLSession(
+              configuration: .default,
+              delegate: ViewController(),
+              delegateQueue: OperationQueue.main
+          )
+          
+          let urlDownload = URL(string: "http://127.0.0.1:8080/download/audio.mpeg")!
+          let task = downloadSession.downloadTask(with: urlDownload)
+              
+  //            print("response ==> \(String(describing: response))")
+          task.resume()
+      }
+  }
 
 class SessionDelegate: NSObject, URLSessionDataDelegate {
     func urlSession(_ session: URLSession, task: URLSessionTask, didSendBodyData bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) {
@@ -140,5 +154,16 @@ class SessionDelegate: NSObject, URLSessionDataDelegate {
         let progress = round(Float(totalBytesSent) / Float(totalBytesExpectedToSend) * 100)
         
         print("carregando: \(progress) %")
+    }
+}
+
+extension ViewController: URLSessionDownloadDelegate {
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
+        print("Download: \(location)")
+    }
+    
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
+        let progress = round(Float(totalBytesWritten) / Float(totalBytesExpectedToWrite) * 100)
+        print("carregando: \(progress) %" )
     }
 }

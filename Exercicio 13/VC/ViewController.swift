@@ -27,18 +27,21 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.backgroundColor = .orange
         view.backgroundColor = .link
 
-//        NetWorkManager.shared.getNews {  result in
-//            switch result {
-//            case .success(let response):
-//                for item  in response {
-//                    self.myView?.newsData.append(item)
-//                }
-//
-//            case .failure(let error):
-//                print(error.self)
-//            }
-//        }
-        NetWorkManager.shared.upLoadTest()
+        NetWorkManager.shared.getNews {  result in
+            switch result {
+            case .success(let response):
+                for item  in response {
+                    self.myView?.newsData.append(item)
+                }
+
+            case .failure(let error):
+                print(error.self)
+            }
+        }
+       
+        //NetWorkManager.shared.upLoadTest()
+        
+//        NetWorkManager.shared.downloadAPI()
     }
 }
 
