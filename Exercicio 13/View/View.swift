@@ -17,11 +17,20 @@ class View: UIView {
     let cellSpacingHeight: CGFloat = 30
     var activityView: UIActivityIndicatorView?
     weak var delegate: ViewDelegate?
-    var newsData: [Article] = [] {
+//    var newsData: [Article] = [] {
+//        didSet {
+//          DispatchQueue.main.async {
+//              self.tableView.reloadData()
+//            self.hideActivityIndicator()
+//            }
+//        }
+//    }
+//
+    var newsDataEntity: [NewsDataEntity] = DataManager.shared.collectionNewsData() {
         didSet {
-          DispatchQueue.main.async {
-              self.tableView.reloadData()
-            self.hideActivityIndicator()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.hideActivityIndicator()
             }
         }
     }
@@ -76,13 +85,13 @@ class View: UIView {
 extension View: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newsData.count ?? Int()
+        return newsDataEntity.count ?? Int()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewNewsCell
        
-        let dataAPI = newsData[indexPath.row]
+        let dataAPI = newsDataEntity[indexPath.row]
         cell?.author.text = " Autor:  \(dataAPI.author!)"
         cell?.content.text = dataAPI.content
     

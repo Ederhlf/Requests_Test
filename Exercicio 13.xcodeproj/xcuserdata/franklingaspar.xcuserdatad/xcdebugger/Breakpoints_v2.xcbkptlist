@@ -110,42 +110,10 @@
             filePath = "Exercicio 13/VC/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "loadNews()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6304B582-FEE2-4ED4-A7DE-7C067647B190 - 4eea112e36395eee"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Exercicio_13.ViewController.loadNews() -&gt; ()"
-                  moduleName = "Exercicio 13"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/franklingaspar/Documents/exercicios%20EBAC/Exercicio%2013/Exercicio%2013/VC/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "1150">
-               </Location>
-               <Location
-                  uuid = "6304B582-FEE2-4ED4-A7DE-7C067647B190 - fd6eac75304082eb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Exercicio_13.ViewController.loadNews() -&gt; ()"
-                  moduleName = "Exercicio 13"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/franklingaspar/Documents/exercicios%20EBAC/Exercicio%2013/Exercicio%2013/VC/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "122">
-               </Location>
-            </Locations>
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -161,6 +129,132 @@
             startingLineNumber = "103"
             endingLineNumber = "103"
             landmarkName = "upLoadTest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A75F2C5F-BA71-44F6-9844-04C219C5E82E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercicio 13/NetWorkService/DataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "getArticles(autor:content:urlToImage:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E114D852-14AD-4D8B-B713-02F4AC505385"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercicio 13/NetWorkService/DataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "collectionNewsData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8CCF74BE-5664-4F99-923C-078F7D4BB74E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercicio 13/View/View.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "newsDataEntity"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "8CCF74BE-5664-4F99-923C-078F7D4BB74E - 6443246315ab5fa4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Exercicio_13.View.newsDataEntity.getter : Swift.Array&lt;Exercicio_13.NewsDataEntity&gt;"
+                  moduleName = "Exercicio 13"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/franklingaspar/Documents/exercicios%20EBAC/Exercicio%2013/Exercicio%2013/View/View.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "8CCF74BE-5664-4F99-923C-078F7D4BB74E - 73143c8302b91fa8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Exercicio_13.View.newsDataEntity.setter : Swift.Array&lt;Exercicio_13.NewsDataEntity&gt;"
+                  moduleName = "Exercicio 13"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/franklingaspar/Documents/exercicios%20EBAC/Exercicio%2013/Exercicio%2013/View/View.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "159">
+               </Location>
+               <Location
+                  uuid = "8CCF74BE-5664-4F99-923C-078F7D4BB74E - 715614bf86f4da44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Exercicio_13.View.newsDataEntity.modify : Swift.Array&lt;Exercicio_13.NewsDataEntity&gt;"
+                  moduleName = "Exercicio 13"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/franklingaspar/Documents/exercicios%20EBAC/Exercicio%2013/Exercicio%2013/View/View.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "8CCF74BE-5664-4F99-923C-078F7D4BB74E - 83f1bbf7c2cd9a4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Exercicio_13.View.newsDataEntity.modify : Swift.Array&lt;Exercicio_13.NewsDataEntity&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Exercicio 13"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/franklingaspar/Documents/exercicios%20EBAC/Exercicio%2013/Exercicio%2013/View/View.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "10">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E63FF14-06F0-46F2-97F9-881296061DBE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Exercicio 13/VC/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
